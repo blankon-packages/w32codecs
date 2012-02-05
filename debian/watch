@@ -1,0 +1,3 @@
+version=3
+
+http://www1.mplayerhq.hu/MPlayer/releases/codecs/all-([\d.]*).tar.bz2

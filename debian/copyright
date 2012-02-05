@@ -1,0 +1,20 @@
+This package was debianized by Christian Marillat <marillat@debian.org> on
+Wed, 13 Dec 2000 10:31:26 +0100.
+
+It was downloaded from http://mp.dev.hu/homepage/dload.html
+
+Upstream Author: Various
+
+Copyright:	Various
+	Copyright (C) 2004-2006 by The Mplayer Team for the
+	codecs-status.html file
+
+License:
+
+   These codecs were created by various companies, like Microsoft (for WMV
+   and WMA), Apple (for Quicktime), Real Networks (for RealMedia), and so
+   on.
+ 
+   These companies distribute these codecs for Windows, and they haven’t
+   given anybody else permission to redistribute them as part of this
+   package.

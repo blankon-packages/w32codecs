@@ -1,0 +1,46 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+build:
+
+clean:
+	dh_testdir
+	dh_testroot
+
+	dh_clean
+
+install: build
+	dh_testdir
+	dh_testroot
+	dh_prep
+	dh_installdirs
+
+	dh_install -Xdebian '*' usr/lib/codecs
+	rm debian/w32codecs/usr/lib/codecs/README
+
+	rm debian/w32codecs/usr/lib/codecs/drvc.so
+	rm debian/w32codecs/usr/lib/codecs/cook.so
+
+# Build architecture-independent files here.
+binary-indep: build install
+# We have nothing to do by default.
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+	dh_installchangelogs 
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_shlibdeps
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb -- -Zbzip2
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install configure

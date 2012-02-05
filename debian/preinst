@@ -1,0 +1,9 @@
+#! /bin/sh -e
+
+if [ -L /usr/lib/win32 ]; then
+    rm -rf /usr/lib/win32 2>/dev/null || true
+fi
+
+#DEBHELPER#
+
+exit 0

@@ -1,0 +1,34 @@
+Source: w32codecs
+Section: non-free/graphics
+Priority: optional
+Maintainer: BlankOn Developers <BlankOn-dev@googlegroups.com>
+XSBC-Original-Maintainer: Christian Marillat <marillat@debian.org>
+Bugs: mailto:marillat@debian.org
+Homepage: http://www1.mplayerhq.hu/MPlayer/releases/codecs/
+Standards-Version: 3.9.1
+Build-Depends: debhelper (>= 7)
+
+Package: w32codecs
+Architecture: i386
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libaviplay (<= 0.50-0.3), divx-codecs, w32codecs-lite, qt6codecs
+Replaces: libaviplay (<= 0.50-0.3), divx-codecs
+Description: win32 binary codecs
+ This package contain video codecs for popular proprietary formats not
+ natively supported by mplayer.
+ .
+  ATI VCR-2 video codec.
+  Cinepak video codec
+  DivX ;-) video codec, ver. 3.11
+  DivX ;-) video codec, ver. 4.x
+  Indeo Video 3.2/4.1/5.0/4.1 quick/5.0 quick codecs.
+  Intel 263 video codec.
+  Microsoft MPEG-4 video codec, beta version 3.0.0.2700
+  Morgan Multimedia Motion JPEG video codec.
+  QuickTime
+  RealAudio
+  RealVideo 8
+  RealVideo 9
+  Windows Media Video 9
+ .
+ And more...
