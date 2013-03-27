@@ -3,13 +3,14 @@ Section: non-free/graphics
 Priority: optional
 Maintainer: BlankOn Developers <BlankOn-dev@googlegroups.com>
 XSBC-Original-Maintainer: Christian Marillat <marillat@debian.org>
-Bugs: mailto:marillat@debian.org
+Bugs: mailto:marillat@deb-multimedia.org
 Homepage: http://www1.mplayerhq.hu/MPlayer/releases/codecs/
-Standards-Version: 3.9.1
-Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.3
+Build-Depends: debhelper (>= 9)
 
 Package: w32codecs
 Architecture: i386
+Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Conflicts: libaviplay (<= 0.50-0.3), divx-codecs, w32codecs-lite, qt6codecs
 Replaces: libaviplay (<= 0.50-0.3), divx-codecs

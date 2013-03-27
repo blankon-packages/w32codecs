@@ -1,3 +1,21 @@
+w32codecs (1:20110131-dmo2blankon1) suroboyo; urgency=low
+
+  * Merge whit debian-multimedia 
+
+ -- Rahman Yusri Aftian <aftian@di.blankon.in>  Wed, 27 Mar 2013 14:23:35 +0000
+
+w32codecs (1:20110131-dmo2) unstable; urgency=low
+
+  * Compress package with xz.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 07 Aug 2012 11:42:50 +0200
+
+w32codecs (1:20110131-dmo1) unstable; urgency=low
+
+  * Add multi-arch support.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 26 Jun 2012 08:37:55 +0200
+
 w32codecs (1:20110131-0.1blankon1) rote; urgency=low
 
   * Initial impor
